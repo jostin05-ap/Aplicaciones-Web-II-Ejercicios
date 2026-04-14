@@ -21,19 +21,16 @@ func main() {
 
 			sum := v1 + v2
 			fmt.Printf("%d + %d = %d\n", v1, v2, sum)
-			break
 
 		case "-":
 
 			rest := v1 - v2
 			fmt.Printf("%d - %.d = %d\n", v1, v2, rest)
-			break
 
 		case "*":
 
 			mult := v1 * v2
 			fmt.Printf("%d * %d = %.d\n", v1, v2, mult)
-			break
 
 		case "/":
 			if v2 == 0 {
@@ -42,7 +39,6 @@ func main() {
 				div := float64(v1) / float64(v2)
 				fmt.Printf("%.d / %d = %.2f\n", v1, v2, div)
 			}
-			break
 
 		case "^":
 			au := 1
@@ -54,7 +50,6 @@ func main() {
 			}
 			fmt.Printf("%.d^%d = %.d\n", v1, v2, au)
 
-			break
 		case "!":
 			au2 := 1
 			for i := 1; i <= v1; i++ {
@@ -63,7 +58,6 @@ func main() {
 
 			}
 			fmt.Printf("%.d!= %.d\n", v1, au2)
-			break
 
 		default:
 			fmt.Println("Operación no válida")
